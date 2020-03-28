@@ -1,22 +1,24 @@
 {
   "compilerOptions": {
-    "target": "es5",
     "module": "commonjs",
-    "outDir": "./lib",
+    "declaration": false,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "esnext",
+    "sourceMap": true,
     "rootDir": "./src",
-    "strict": true,
+    "outDir": "./lib",
     "baseUrl": "./",
+    "incremental": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "strict": true,
     "paths": {
       "@/*": [
         "src/*"
       ]
     },
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "experimentalDecorators": true,
-    "declaration": true,
-    "emitDecoratorMetadata": true,
-    "removeComments": true,
-    "incremental": true,
   }
 }
