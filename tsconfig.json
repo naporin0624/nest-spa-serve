@@ -2,13 +2,13 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
-    "outDir": "./lib",
-    "rootDir": "./src",
+    "outDir": "./dist",
+    "rootDir": "lib",
     "strict": true,
     "baseUrl": "./",
     "paths": {
       "@/*": [
-        "./src/*"
+        "lib/*"
       ]
     },
     "esModuleInterop": true,
