@@ -1,0 +1,40 @@
+{
+  "name": "nest-spa-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@nestjs/common": "^7.0.6",
+    "@nestjs/core": "^7.0.6",
+    "@nestjs/serve-static": "^2.1.0",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-dev-middleware": "^3.7.2"
+  },
+  "devDependencies": {
+    "@types/webpack": "^4.41.8",
+    "@types/webpack-dev-middleware": "^3.7.0",
+    "@typescript-eslint/eslint-plugin": "^2.25.0",
+    "@typescript-eslint/parser": "^2.25.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^2.0.2",
+    "ts-node": "^8.8.1"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node -r tsconfig-paths/register dist",
+    "lint": "eslint --ext .ts src"
+  },
+  "description": "Package for building spa with nestjs",
+  "author": "naporin0624 <naporin0624@gmail.com>",
+  "keywords": [
+    "nestjs",
+    "webpack",
+    "typescript",
+    "javascript",
+    "nodejs"
+  ]
+}
