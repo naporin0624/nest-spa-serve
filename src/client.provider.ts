@@ -3,6 +3,7 @@ import { Configuration } from "webpack";
 import webpack from "webpack";
 import { AbstractHttpAdapter } from "@nestjs/core";
 import webpackDevMiddleware from "webpack-dev-middleware";
+import WebpackHotMiddleware from "webpack-hot-middleware";
 
 @Injectable()
 export class ClientProvider {
@@ -17,5 +18,6 @@ export class ClientProvider {
     });
 
     app.use(webpackDevMiddleware(compiler));
+    app.use(WebpackHotMiddleware(compiler));
   }
 }
